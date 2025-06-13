@@ -87,3 +87,44 @@ car2.set_details('BMW', 'White')
 
 car1.show_details()
 car2.show_details()
+
+"""
+self function
+name roll number grade
+program software = mistake
+
+update marks = will get confused
+
+"""
+#problem
+"""
+class student:
+    def set_details(name, age):
+        name = name
+        age = age
+
+Student1 = student()
+Student1.set_details('Udit', 97)
+print(Student1.name)
+"""
+
+#solution
+class Student:
+    def set_details(self, name, marks):
+        self.name = name
+        self.marks = marks
+
+student1 = Student()
+student1.set_details('Udit', 95)
+print(student1.name, student1.marks)
+
+# project 1
+class Car:
+    def set_details(self, brand, color):
+        self.brand = brand
+        self.color = color
+
+        print(brand, color)
+
+car1 = car()
+car1.set_details('Tesla', 'Red')
